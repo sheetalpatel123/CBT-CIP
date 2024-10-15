@@ -1,0 +1,464 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+body{
+    background:#222;
+}
+.header{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+.header .logo{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 2.5rem;
+
+}
+.header .logo span{
+    color:darkturquoise;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    color: #fff;
+    margin-left: 2rem;
+
+}
+.header .navbar a:hover{
+    color: aqua;
+}
+#manu-bar{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+    margin-left: 10%;
+
+}
+.home .content h3{
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.home .content h3 span{
+    color: aqua;
+    text-transform: uppercase;
+
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-left: 30%;
+}
+.btn:hover{
+    background: aqua;
+}
+
+/* img slider start here */
+
+.slider{
+    width: 90%;
+    height: 500px;
+    overflow: hidden;
+    border: 2px solid black;
+    margin-left: 7%;
+   }
+   .slide{
+    width: 500%;
+    height: 120%;
+    animation: slide 6s infinite;
+   }
+   .slide img{
+    height: 100%;
+    width: 20%;
+   }
+   @keyframes slide{
+            0%{margin-left: 0%;}
+            20%{margin-left: 0%;}
+            25%{margin-left: -100%;}
+            45%{margin-left: -100%;}
+            50%{margin-left: -200%;}
+            70%{margin-left: -200%;}
+            75%{margin-left: -300%;}
+            95%{margin-left: -300%;}
+            100%{margin-left: -400%;}
+
+   }
+
+   /* about sectiom css start here.. */
+
+   .about{
+    display: flex;
+   grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img{
+ margin-top: 40px;
+ margin-left: 20%;
+ border-radius: 20%;
+ height: 500px;
+ width: 500px;
+ 
+}
+
+.about-text{
+    margin-top: 40px;
+    margin-left: 20%;
+   
+}
+.about-text h2{
+    font-size: 60px;
+    margin-left: 20px;
+    color: #fff;
+}
+.about-text h2 span{
+    color: #0ef;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+p{
+    color: #fff;
+    font-size: 15px;
+}
+.button-box{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color:  #081b29;
+    text-decoration: none;
+    font-weight: 600;
+
+}.button-box:hover {
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+   }
+
+
+   /* services section css start here */
+
+   h1{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 40%;
+   }
+
+   h3{
+    font-size: 20px;
+    color: #0ef;
+    font-weight: 10px;
+   }
+
+   .services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+    gap: 1.5rem;
+   }
+    
+   .services .box-container .box{
+    border-radius: 0.5rem;
+    background: #333;
+    text-align: center;
+    padding: 2.5rem;
+   }
+   /* price section css start here.. */
+   .price h2{
+    margin-left: 40%;
+    font-size: 50px;
+   
+   }
+
+   
+   .price .box-container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+   }
+    
+   .price .box-container1 .box2{
+    padding: 2rem 0;
+    background: #333;
+    border-radius: 0.5rem;
+    text-align: center;
+   }
+   .price .box-container1 .box2 .title1{
+    background-color: var(--theme-color);
+    color: #fff;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    margin-right: 20%;
+   }
+   
+   .price .box-container1 .box2:hover{
+    transform: scale(1.03);
+   }
+    
+   .price .box-container1 .box2 .amount{
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 4rem;
+    margin-right: 20%;
+   }
+    
+   .price .box-container1 .box2 ul{
+    list-style: none;
+    padding: 1rem 0;
+   }
+    
+   .price .box-container1 .box2 ul li{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+
+   }
+   .price .box-container1 .box2 ul li i{
+    color: var(--theme-color);
+    padding-right: 0.5rem;
+
+   }
+
+
+
+   /* contact form css start hrere... */
+   .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color:#333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color:#fff;
+    margin-right: 35%;
+}
+
+form {
+    margin-bottom: 30px;
+}
+label{
+    color: #fff;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#event-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#event-list li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.event-info {
+    margin-bottom: 10px;
+}
+
+.event-info strong {
+    display: block;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* gellary section css start here */
+h1{
+    margin-right: 30%;
+}
+span{
+    color: #0ef;
+}
+
+.container1{
+   
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+    border: 2px solid black;
+    width: 1200px;
+    background-color: #333;
+    /* display: flex; */
+   
+}
+
+img{
+margin: 20px 20px 10px 30px;
+    height:150px;
+    width: 300px;
+      
+
+
+}
+.box1:hover img{
+  
+    transform: scale(1.2,1.2);
+
+}
+.box1:hover button{
+    background-color:rgb(135, 135, 237) ;
+}
+
+
+.box1{
+    height: 250px;
+    width: 360px;
+    /* justify-content: space-evenly; */
+    margin: 20px;
+    border: 2px solid black;
+    transition:   transform 1s linear ;
+}
+
+h3{
+    margin-left: 30%;
+}
+
+button{
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin-left:20% ;
+    width: 50%;
+    height: 35px;
+}
+
+
+
+
+/* contact form css start here... */
+
+.contact-section h2{
+    margin-right: 50px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
